@@ -225,7 +225,7 @@ def get_cars(brand: str, model: str, user_request):
 
 
 def start_scraper(request: dict):
-    logger.log(level=logging.DEBUG, msg=f"Start Scraping")
+    logger.log(level=logging.INFO, msg=f"Start Scraping")
     timer = time()
     user_request = {
         "type": "legkovie",
@@ -237,7 +237,8 @@ def start_scraper(request: dict):
     brand_id, model_id = brand_model_id(user_request)
     new_cars, updated_cars, car_ids = get_cars(brand_id, model_id, user_request)
     print(f"Work time {round(time() - timer, 2)} sec")
-    logger.log(level=logging.DEBUG, msg=f"End Scraping")
+    logger.log(level=logging.INFO, msg=f"Work time {round(time() - timer, 2)} sec")
+    logger.log(level=logging.INFO, msg=f"End Scraping")
     return new_cars, updated_cars, car_ids
 
 

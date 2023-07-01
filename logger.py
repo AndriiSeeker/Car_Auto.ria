@@ -5,7 +5,7 @@ log_format = (
 )
 
 file_handler = logging.FileHandler("data/pycar.log")
-file_handler.setLevel(logging.ERROR)
+file_handler.setLevel(logging.INFO)
 file_handler.setFormatter(logging.Formatter(log_format))
 
 stream_handler = logging.StreamHandler()
