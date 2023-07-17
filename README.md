@@ -1,5 +1,5 @@
 # Car_Auto.ria
-Telegram chanel: https://t.me/cars_auto_ria_from_usa
+Telegram chanтel: https://t.me/cars_auto_ria_from_usa
 
 Telegram bot (for admin): https://t.me/choose_car_bot 
 
